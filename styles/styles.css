@@ -17,11 +17,17 @@
     font-size: 18px;
     line-height: 21px;
   }
-  .navigation-link{ color:black;
+  .navigation-link{ 
+    color:black;
     font-size: 20px;
     line-height: 26px;
     font-weight: bold;
     text-decoration: none;
+  }
+  .header-image{
+    width: 1200px;
+    height:485px;
+    background: url("../images/divider.svg") no-repeat 0px 428px  ,url("../images/index-background.jpg") no-repeat  ;
   }
   .main-reason-title{
     font-weight: bold;
@@ -57,7 +63,8 @@
     font-size: 22px;
     line-height: 26px;
   }
-  .button-form{color:white;
+  .button-form{
+    color:white;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
@@ -65,8 +72,8 @@
     line-height: 36px;
     text-decoration: none;
   }
-  .subscription{color:white;
-    
+  .subscription{
+    color:white;
     background-image:url("../images/background.jpg") ;
     background-repeat: no-repeat;
     
@@ -115,7 +122,6 @@
     line-height: 26px;
   }
   .catalog-filter-item{
-    
     line-height: 23px;
   }
   .submit-button.blue-button{
@@ -139,7 +145,6 @@
     line-height: 39px;
   }
   .select-control{
-    
     line-height: 23px;
   }
   .hotel-card-title{
@@ -154,23 +159,21 @@
     line-height: 23px;
   }
 .button-detail.button-form{
-    
     font-size: 16px;
-    
 }
 
 .hotel-card-favorites.blue-button{
     font-size: 16px;
 }
-.hotel-card-favorites-added{background-color: #7DB54F;
+.hotel-card-favorites-added{
+    background-color: #7DB54F;
     color:white;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
 }
-.hotel-card-rating{
-    
+.hotel-card-rating{  
     font-size: 16px;
     text-transform: uppercase;
 }
