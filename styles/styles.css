@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .navigation-link{ 
+    color:black;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .header-image{
+    width: 1200px;
+    height:485px;
+    background: url("../images/divider.svg") no-repeat 0px 428px  ,url("../images/index-background.jpg") no-repeat  ;
+  }
+  .main-reason-title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  .main-reason-description{
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .advantage-item-decription-blue{
+      color:white;
+      background-color: #83B3D3;
+  }
+  .advantage-item-title{
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .advantage-item-number{
+    text-transform: uppercase;
+  }
+  .interest-container-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .interest-container-decription{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .button-form{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: #756257;
+    line-height: 36px;
+    text-decoration: none;
+  }
+  .subscription{
+    color:white;
+    background-image:url("../images/background.jpg") ;
+    background-repeat: no-repeat;
+    
+  }
+  .subscription-title{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+  .subscription-decription{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .blue-button{
+    background-color: #83B3D3;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+  }
+  .footer-phone{
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+  }
+  .catalog-container{
+      background-image:url("../images/catalog-background.jpg") ;
+      background-repeat: no-repeat;
+      color:white
+  }
+  .filter-title{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 78px;
+  }
+  .breadcrumbs-hotels{
+    font-size: 16px;
+  }
+  .catalog-filter-title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .catalog-filter-item{
+    line-height: 23px;
+  }
+  .submit-button.blue-button{
+    background: #83B3D3;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color:white;
+  }
+  .reset{
+      color:white;
+  }
+  .found-hotels{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .number-hotels{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .select-control{
+    line-height: 23px;
+  }
+  .hotel-card-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .hotel-card-description{
+    line-height: 23px;
+  }
+  .hotel-card-price{
+    line-height: 23px;
+  }
+.button-detail.button-form{
+    font-size: 16px;
+}
+
+.hotel-card-favorites.blue-button{
+    font-size: 16px;
+}
+.hotel-card-favorites-added{
+    background-color: #7DB54F;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.hotel-card-rating{  
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.pagination-link{
+    text-decoration: none;
+    
+}
+  
