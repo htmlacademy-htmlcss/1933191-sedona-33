@@ -24,6 +24,11 @@
     font-size: 18px;
     line-height: 21px;
   }
+  .page-header{
+    display:flex;
+    width: 1060px;
+    margin: 0 auto;
+  }
   .navigation{
     display:flex;
     width: 1060px;
@@ -45,7 +50,6 @@
     max-width: 310px;
     margin-left: auto;
   }
-  
   .main-container{
     flex-grow: 1;
     width:1200px;
@@ -74,10 +78,13 @@
   .advantage-cards{
     display: flex;
     flex-wrap: wrap;
+    
   }
   
   .advantage-item-decription-blue{
-    width: 400px;
+    display: flex;
+    flex:1 0 auto;
+    width: 1200px;
     height: 384px;
     color:white;
     background-color: #83B3D3;
