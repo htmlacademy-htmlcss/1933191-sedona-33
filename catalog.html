@@ -68,19 +68,19 @@
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="pool" checked>
-                                            Бассейн
+                                            <span> Бассейн</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="parking" checked>
-                                            Парковка
+                                            <span>Парковка</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="checkbox" name="Wi-Fi">
-                                            Wi-Fi
+                                            <span> Wi-Fi</span>
                                         </label>
                                     </li>
                                 </ul>
@@ -91,44 +91,44 @@
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="control-input" type="radio" name="building-group" value="hotel" checked>
-                                            Гостиница
+                                            <span> Гостиница</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         
                                         <label class="control">
                                             <input class="control-input" type="radio" name="building-group" value="Motel">
-                                            Мотель
+                                            <span>Мотель</span>
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
-                                        <label class="control">
+                                        <label class="control apartments">
                                             <input class="control-input" type="radio" name="building-group" value="apartments">
-                                            Апартаменты
+                                            <span> Апартаменты</span>
                                         </label>
                                     </li>
                                 </ul>
                                 <ul class="filter-price-list">
-                                    <li class="catalog-filter-title">
+                                    <li class="catalog-filter-title filter-price-title">
                                         Стоимость,₽:
                                     </li>
                                     <li class="filter-price-item">
                                         <table class="filter-price-table">
-                                            <tr>
+                                            <tr class="filter-price-table-row">
                                                 <td class="filter-min-price">
                                                     <input type="number" value="0" name="min-price" class="filter-price-input">
-                                                    <span>от</span>
+                                                    <span class="filter-price-ot">от</span>
                                                 </td>
                                                 <td class="filter-max-price">
-                                                    <input type="text" value="9000" name="max-price" class="filter-price-input">
-                                                    <span>до</span>
+                                                    <input type="number" value="9000" name="max-price" class="filter-price-input">
+                                                    <span class="filter-price-do">до</span>
                                                 </td>
                                             </tr>
                                         </table>
                                     </li>
                                 </ul>
                                 <div class="buttons-filter">
-                                <button class="blue-button submit-button blue-button" type="submit">Применить</button>
+                                <button class="blue-button submit-button " type="submit">Применить</button>
                                 <button class="reset" type="submit">Сбросить</button>
                                 </div>
                               
@@ -149,18 +149,20 @@
                             </select>
                             <img class="expand-arrow" src="images/arrow-bottom.svg" width="11" height="7" alt="Стрелка вниз">
                         </div>
-                        <a href="#" class="button button-selected">
-                            <img src="images/mode-tile.svg" width="16" height="14" alt="Показать карточки">
-                            <span class="visually-hidden">Показать карточки</span>
-                        </a>
-                        <a href="#" class="button">
-                            <img src="images/mode-slideshow.svg" width="16" height="14" alt="Показать карточки">
-                            <span class="visually-hidden">Показать Слайдом</span>
-                        </a>
-                        <a href="#" class="button">
-                            <img src="images/mode-list.svg" width="16" height="14" alt="Показать карточки">
-                            <span class="visually-hidden">Показать список</span>
-                        </a>
+                        <div class="sorting-icon">
+                          <a href="#" class="button button-selected">
+                              <img src="images/mode-tile.svg" width="16" height="14" alt="Показать карточки">
+                              <span class="visually-hidden">Показать карточки</span>
+                          </a>
+                          <a href="#" class="button">
+                              <img src="images/mode-slideshow.svg" width="16" height="14" alt="Показать карточки">
+                              <span class="visually-hidden">Показать Слайдом</span>
+                          </a>
+                          <a href="#" class="button">
+                              <img src="images/mode-list.svg" width="16" height="14" alt="Показать карточки">
+                              <span class="visually-hidden">Показать список</span>
+                          </a>
+                        </div>
                     </div>
                     <ul class="hotel-list">
                         <li class="hotel-card">
@@ -244,9 +246,10 @@
                             </ul>
                             <span class="hotel-card-rating">Рейтинг:9,2</span>
                         </li>
-
                     </ul>
+                    <div class="pagination-show-more-container">
                     <button class="pagination-show-more blue-button" type="button">Загрузить ещё</button>
+                    </div>
                     <div class="page-selection">
                         <ul class="pagination">
                           <li class="pagination-item">
@@ -269,29 +272,37 @@
                           </li>
                         </ul>
                         <div class="select-numbers">
-                            <span class="number-per-page">Гостиниц на странице:</span>
-                            <select class="select-numbers-hotels" aria-label="Количество">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
-                            <img class="expand-arrow-numbers" src="images/arrow-bottom.svg" width="11" height="7" alt="Стрелка вниз">
+                            <div>
+                                <span class="number-per-page">Гостиниц на странице:</span>
+                            </div> 
+                            <div>
+                              <select class="select-numbers-hotels" aria-label="Количество">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                              </select>
+                              <img class="expand-arrow-numbers" src="images/arrow-bottom.svg" width="11" height="7" alt="Стрелка вниз">
+                            </div>
                         </div>  
                     </div>
                 </section>
             
-                <section class="subscription-inner">
+                <section class="subscription-inner subscription">
+                    <div class="subscription-container">
                     <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-                    <p class="subscription-decription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <p class="subscription-decription">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+                    </div>
+                    <div  class="email-form">
                     <input type="email" class="subscription-email" placeholder="Ваш e-mail" required>
                     <button class="subscription-button blue-button">Подписаться</button>
+                    </div>
                 </section>
             </div> 
         </main> 
