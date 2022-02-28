@@ -8,37 +8,41 @@
 </head>
   <body>
     <header class="page-header">
-      <img class="header-icon" src="images/logo.svg" width="139" height="70" alt="Город Седона">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link selected" href="#">Главная</a>
-          </li>
-          <li class="navigation-item"> 
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item"> 
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-user"> 
-          <li class="navigation-item">
-            <a class="navigation-link-icon" href="#">
-              <img src="images/search.svg" width="18" height="18" alt="Поиск">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link-icon" href="#">
-              <img src="images/favorite.svg" width="18" height="17" alt="Избранное">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <button class="button-form" >Хочу сюда!</button>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header-container">
+        <div>
+          <img class="header-icon" src="images/logo.svg" width="139" height="70" alt="Город Седона">
+        </div>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link selected" href="#">Главная</a>
+            </li>
+            <li class="navigation-item"> 
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item"> 
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user"> 
+            <li class="navigation-item">
+              <a class="navigation-link-icon" href="#">
+                <img src="images/search.svg" width="18" height="18" alt="Поиск">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link-icon" href="#">
+                <img src="images/favorite.svg" width="18" height="17" alt="Избранное">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <button class="button-form" >Хочу сюда!</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div class="header-image">
       <img class="header-description" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону!">
       </div>
@@ -51,9 +55,11 @@
       </div>
       <section class="advantage-cards">
         <article class="advantage-item-decription-blue">
-          <h3 class="advantage-item-title">Настоящий городок</h3>
-          <p class="advantage-item-number">— №1 —</p>
-          <p class="advantage-item-declaration">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="decription-blue-container">
+            <h3 class="advantage-item-title">Настоящий городок</h3>
+            <p class="advantage-item-number">— №1 —</p>
+            <p class="advantage-item-declaration">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <img class="advantage-item-img" src="images/photo-1.jpg" width="800" height="384" alt="Город в Седоне">
         </article>
 
@@ -78,9 +84,11 @@
 
         <article class="advantage-item-decription-blue">
           <img class="advantage-item-img" src="images/photo-2.jpg" width="800" height="384" alt="Пейзажи Седоны">
+          <div class="decription-blue-container">
           <h3 class="advantage-item-title">Там есть мост дьявола</h3>
           <p class="advantage-item-number">— №2 —</p>
           <p class="advantage-item-declaration advantage-promotion">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
         </article>
 
         <article class="advantage-item-decription">
