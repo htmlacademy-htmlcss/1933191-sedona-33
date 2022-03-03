@@ -355,9 +355,14 @@
   .subscription-email{
     width: 600px;
     height: 60px;
-    
+    padding: 0;
     border-radius: 10px 0px 0px 10px;
     border:none;
+  }
+  .subscription-email::placeholder{
+    line-height: 26px;
+    position: relative;
+    left:22px;
   }
   .subscription-email:hover{
     background: #E6E6E6;
@@ -389,7 +394,7 @@
   }
   .subscription-button.blue-button{
     width: 200px;
-    height: 62px;
+    height: 60px;
     
     border-radius: 0px 10px 10px 0px;
   }
