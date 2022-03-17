@@ -700,6 +700,7 @@
   .free-places{
     color:#333333;
   }
+  
   .modal-input{
     width: 419px;
     border-radius: 5px;
@@ -1555,7 +1556,6 @@
     margin: 0;
   }
   
-
   .hotel-card-favorites.blue-button{
     font-size: 16px;
     font-family: "PT Sans", sans-serif;
@@ -1564,10 +1564,12 @@
     line-height: 21px;
     padding: 8px 0;
   }
+
   .hotel-card-favorites:hover{
     outline: 1px solid #756257;
     border-radius: 4px;
   }
+
   .hotel-card-favorites-added{
     background-color: #7DB54F;
     color:white;
