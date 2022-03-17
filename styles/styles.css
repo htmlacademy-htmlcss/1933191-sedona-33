@@ -186,14 +186,16 @@
     background: #615048;
   }
 
+  .button-form:focus{
+    outline: 3px solid #83B3D3;
+    background: #615048;
+  }
+
   .button-form:active{
     color: rgba(255, 255, 255, 0.3);
     outline: none;
   }
 
-  .button-form:focus{
-    outline: 3px solid #83B3D3;
-  }
 
   /* main */
   .main-container{
@@ -445,6 +447,7 @@
 
   .subscription-email:focus{
     outline: 3px solid #83B3D3;
+    background: #E6E6E6;
   }
 
   .blue-button{
@@ -466,10 +469,11 @@
 
   .blue-button:focus{
     outline: 3px solid #756257;
+    background: #68A2CA;
   }
 
   .blue-button:active{
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     outline: none;
   }
 
@@ -527,6 +531,10 @@
     border-radius: 10px;
   }
 
+  .footer-button:focus > .footer-button-img{
+    fill: #68A2CA;
+  }
+
   .footer-button:active{
     opacity: 0.3;
     outline: none;
@@ -560,6 +568,7 @@
   .footer-phone:focus{
     outline: 3px solid #83B3D3;
     border-radius: 10px;
+    color: #756257;
   }
 
   .footer-phone:active{
@@ -567,10 +576,6 @@
     outline: none;
   }
   
-  
-
-  
-
   .html-academy{
     margin: 26px 56px 26px 70px;
     padding: 16px;
@@ -587,6 +592,10 @@
   .html-academy:focus{
     outline: 3px solid #83B3D3;
     border-radius: 10px;
+  }
+
+  .html-academy:focus>.footer-contacts-img{
+    fill: #756257;
   }
 
   .html-academy:active{
@@ -654,6 +663,7 @@
 
   .modal-close-button:focus{
     outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
   }
 
   .modal-close-button:active{
@@ -720,8 +730,8 @@
   }
 
   .modal-input:active{
+    background-color: #FFFFFF;
     outline: 2px solid #000000;
-    outline: none;
   }
 
   .form-label{
@@ -1122,10 +1132,12 @@
 
   .control-mark:focus-within{
     outline: 3px solid #83B3D3;
+    background: rgba(255, 255, 255, 0.6);
   }
 
   .control-mark:active{
     outline: none;
+    background: rgba(255, 255, 255, 0.3);
   }
   
   .control-input[type="checkbox"]:checked + .control-mark{
@@ -1263,6 +1275,7 @@
     background: #756257;
     opacity: 1;
     outline: none;
+    box-shadow: none;
   }
 
   /* range */
@@ -1339,10 +1352,11 @@
 
   .blue-button.submit-button:focus{
     outline: 3px solid #FFFFFF;
+    background: #68A2CA;
   }
 
   .blue-button.submit-button:active{
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
     outline: none;
   }
 
@@ -1365,7 +1379,8 @@
 
   .reset:focus{
     outline: 3px solid  #83B3D3;
-    border-radius: 4px;
+    outline-offset: 3px;
+    border-radius: 1px;
   }
 
   .reset:active{
@@ -1450,6 +1465,7 @@
 
   .button-sorting:hover:not(:nth-child(1)),.button-sorting:focus:not(:nth-child(1)){
     border: 2px solid #83B3D3;
+    outline: none;
   }
 
   .sorting-icon {
@@ -1538,6 +1554,7 @@
     align-items: center;
     margin: 0;
   }
+  
 
   .hotel-card-favorites.blue-button{
     font-size: 16px;
@@ -1547,7 +1564,10 @@
     line-height: 21px;
     padding: 8px 0;
   }
-
+  .hotel-card-favorites:hover{
+    outline: 1px solid #756257;
+    border-radius: 4px;
+  }
   .hotel-card-favorites-added{
     background-color: #7DB54F;
     color:white;
@@ -1565,6 +1585,7 @@
 
   .hotel-card-favorites-added:hover{
     background: #6C9E42;
+    outline: none;
   }
 
   .hotel-card-favorites-added:focus{
@@ -1572,10 +1593,10 @@
   }
 
   .hotel-card-favorites-added:active{
-    opacity: 0.3;
     outline: none;
+    color: rgba(255, 255, 255, 0.3);
   }
-
+  
   .stars-list{
     display: flex;
     list-style-type: none;
